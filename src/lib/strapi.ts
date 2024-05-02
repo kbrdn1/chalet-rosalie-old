@@ -19,7 +19,13 @@ export default async function fetchApi<T>({
   wrappedByKey,
   wrappedByList,
 }: Props): Promise<T> {
-  if (endpoint.startsWith('/')) {
+  const token = import.meta.env.STRAPI_API_TOKEN;
+
+  if (!token) {
+    throw new Error("STRAPI_API_TOKEN is not set in .env");
+  }
+
+  if (endpoint.startsWith("/")) {
     endpoint = endpoint.slice(1);
   }
 
@@ -30,7 +36,13 @@ export default async function fetchApi<T>({
       url.searchParams.append(key, value);
     });
   }
-  const res = await fetch(url.toString());
+
+  const res = await fetch(url.toString(), {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+
   let data = await res.json();
 
   if (wrappedByKey) {
