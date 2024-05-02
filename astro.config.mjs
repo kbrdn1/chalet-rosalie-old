@@ -6,8 +6,9 @@ import vercel from '@astrojs/vercel/edge';
 // Or a completely static build
 // import vercel from '@astrojs/vercel/static';
 import vue from "@astrojs/vue";
-
 import mdx from "@astrojs/mdx";
+
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
@@ -18,5 +19,5 @@ export default defineConfig({
   adapter: vercel({
     imageService: true
   }),
-  integrations: [vue(), mdx()]
+  integrations: [vue(), mdx(), sitemap()]
 });
