@@ -19,5 +19,6 @@ export default defineConfig({
   adapter: vercel({
     imageService: true
   }),
+  site:'https://chalet-rosalie.vercel.app',
   integrations: [vue(), mdx(), sitemap()]
 });
