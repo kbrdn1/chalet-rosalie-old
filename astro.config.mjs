@@ -7,6 +7,8 @@ import vercel from '@astrojs/vercel/edge';
 // import vercel from '@astrojs/vercel/static';
 import vue from "@astrojs/vue";
 
+import mdx from "@astrojs/mdx";
+
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
@@ -16,5 +18,5 @@ export default defineConfig({
   adapter: vercel({
     imageService: true
   }),
-  integrations: [vue()]
+  integrations: [vue(), mdx()]
 });
