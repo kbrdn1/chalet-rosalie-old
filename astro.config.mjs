@@ -1,6 +1,6 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 // Use Vercel Edge Functions (Recommended)
-import vercel from '@astrojs/vercel/edge';
+import vercel from "@astrojs/vercel/edge";
 // Can also use Serverless Functions
 // import vercel from '@astrojs/vercel/serverless';
 // Or a completely static build
@@ -12,13 +12,20 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
+  output: "server",
   experimental: {
-    assets: true
+    assets: true,
   },
   adapter: vercel({
-    imageService: true
+    imageService: true,
   }),
-  site:'https://chalet-rosalie.vercel.app',
-  integrations: [vue(), mdx(), sitemap()]
+  site: "https://chalet-rosalie.vercel.app",
+  integrations: [vue(), mdx(), sitemap()],
+  i18n: {
+    defaultLocale: "fr",
+    locales: ["fr", "en"],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
 });
