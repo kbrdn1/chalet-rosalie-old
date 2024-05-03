@@ -20,16 +20,21 @@ export default async function fetchApi<T>({
   wrappedByList,
 }: Props): Promise<T> {
   const token = import.meta.env.STRAPI_API_TOKEN;
+  const APIurl = import.meta.env.STRAPI_URL;
 
   if (!token) {
     throw new Error("STRAPI_API_TOKEN is not set in .env");
+  }
+
+  if (!APIurl) {
+    throw new Error("STRAPI_URL is not set in .env");
   }
 
   if (endpoint.startsWith("/")) {
     endpoint = endpoint.slice(1);
   }
 
-  const url = new URL(`${import.meta.env.STRAPI_URL}/api/${endpoint}`);
+  const url = new URL(`${APIurl}/api/${endpoint}`);
 
   if (query) {
     Object.entries(query).forEach(([key, value]) => {
