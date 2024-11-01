@@ -1,5 +1,5 @@
 <template>
-  <section :class="styles.root">
+  <section id="info" :class="styles.root">
     <iframe
       :class="styles.map"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39433.82743101446!2d6.936044886240679!3d48.072629309115975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4793c443b02861a1%3A0x5727c106479f717!2s88400%20Xonrupt-Longemer!5e1!3m2!1sfr!2sfr!4v1730459914356!5m2!1sfr!2sfr"

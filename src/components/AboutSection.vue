@@ -1,5 +1,5 @@
 <template>
-  <section :class="styles.root">
+  <section id="about" :class="styles.root">
     <div :class="styles.carousel"></div>
     <div :class="styles.container">
       <h2 :class="styles.containerTitle">A propos</h2>
