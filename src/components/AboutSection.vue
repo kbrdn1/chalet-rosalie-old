@@ -43,5 +43,5 @@
 <script setup lang="ts">
 import * as styles from "@/styles/AboutSection";
 import Icon from "@/components/Icon.vue";
-import aItems from "@/constants/aboutItems";
+import aItems from "@/constants/AboutItems";
 </script>
