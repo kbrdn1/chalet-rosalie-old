@@ -27,7 +27,7 @@ const rightSide = vstack({
   h: "full",
   bg: "olive",
   overflow: "hidden",
-  bgImage: "url('/img/panorama-1.png')",
+  bgImage: "url('/img/photo-0.png')",
   bgSize: "cover",
   bgPosition: "center",
   shadow: "2xl",

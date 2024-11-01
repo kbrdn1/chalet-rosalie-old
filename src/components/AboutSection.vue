@@ -1,6 +1,8 @@
 <template>
   <section id="about" :class="styles.root">
-    <div :class="styles.carousel"></div>
+    <div :class="styles.carousel">
+      <Carousel />
+    </div>
     <div :class="styles.container">
       <h2 :class="styles.containerTitle">A propos</h2>
       <div :class="styles.content">
@@ -44,4 +46,5 @@
 import * as styles from "@/styles/AboutSection";
 import Icon from "@/components/Icon.vue";
 import aItems from "@/constants/AboutItems";
+import Carousel from "@/components/CarouselPhoto.vue";
 </script>
