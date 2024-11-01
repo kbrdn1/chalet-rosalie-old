@@ -16,7 +16,6 @@ const leftSide = vstack({
   w: "1/2",
   h: "full",
   justify: "start",
-  shadow: "2xl",
   mdDown: {
     w: "full",
     h: "fit"
@@ -28,7 +27,7 @@ const rightSide = vstack({
   h: "full",
   bg: "olive",
   overflow: "hidden",
-  bgImage: "url('/public/img/panorama-1.png')",
+  bgImage: "url('/img/panorama-1.png')",
   bgSize: "cover",
   bgPosition: "center",
   shadow: "2xl",
@@ -45,9 +44,10 @@ const contentContainer = vstack({
   justify: "center",
   bg: "white",
   gap: "2rem",
-  bgImage: "url('/public/img/mask-header.png')",
+  bgImage: "url('/img/mask-header.png')",
   bgBlendMode: "soft-light",
   bgSize: "cover",
+  shadow: "2xl",
 });
 
 const title = css({

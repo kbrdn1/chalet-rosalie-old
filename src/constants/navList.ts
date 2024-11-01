@@ -10,10 +10,10 @@ const list: NavList[] =
       name: 'Réservation',
       path: '/#reservation',
     },
-    {
-      name: 'Actualités',
-      path: '/#news',
-    },
+    // {
+    //   name: 'Actualités',
+    //   path: '/#news',
+    // },
     {
       name: 'Photos',
       path: '/#photos',

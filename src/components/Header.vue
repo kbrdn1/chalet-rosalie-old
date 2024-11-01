@@ -28,7 +28,7 @@
               {{ item.text }}
             </p>
           </div>
-          <div :class="styles.content.boxButton">Réserver</div>
+          <a href="#reservation" :class="styles.content.boxButton">Réserver</a>
         </div>
       </div>
       <div :class="styles.indicator.container">

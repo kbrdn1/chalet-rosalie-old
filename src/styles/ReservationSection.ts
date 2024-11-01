@@ -39,6 +39,7 @@ const link = hstack({
   bg: "parchment",
   color: "umber",
   fontWeight: "bold",
+  maxW: "450px",
 });
 
 const form = vstack({

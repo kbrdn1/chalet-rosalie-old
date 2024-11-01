@@ -3,9 +3,10 @@ import { hstack, vstack } from "panda/patterns";
 
 const root = vstack({
   w: "full",
-  bgImage: "url('/public/img/mask-info.png')",
+  bg: "transparent",
+  bgImage: "url('/img/mask-info.png')",
   bgSize: "cover",
-  bgBlendMode: "color-dodge",
+  bgBlendMode: "multiply",
   bgPosition: "center",
   alignItems: "center",
   justify: "center",
