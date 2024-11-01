@@ -9,7 +9,7 @@ const root = vstack({
   bgPosition: "center",
   alignItems: "center",
   justify: "center",
-  p: 4,
+  p: 10,
   pos: "relative",
 });
 

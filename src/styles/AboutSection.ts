@@ -22,6 +22,7 @@ const containerTitle = css({
   color: "umber",
   fontSize: "5xl",
   fontWeight: "bold",
+  alignSelf: "left",
 });
 
 const content = vstack({
