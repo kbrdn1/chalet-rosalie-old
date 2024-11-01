@@ -18,6 +18,7 @@
     "@astrojs/vercel": "3.8.2",
     "@astrojs/vue": "^4.1.0",
     "astro": "^2.10.14",
+    "caniuse-lite": "^1.0.30001676",
     "prettier": "^3.2.5",
     "web-vitals": "^3.3.1"
   },

@@ -8,6 +8,7 @@ export default defineConfig({
   include: [
     "./src/**/*.{ts,tsx,js,jsx,astro,vue}",
     "./pages/**/*.{ts,tsx,js,jsx,astro,vue}",
+    "./components/**/*.{ts,tsx,js,jsx,astro,vue}"
   ],
 
   // Files to exclude
