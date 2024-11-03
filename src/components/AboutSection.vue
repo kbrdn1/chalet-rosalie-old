@@ -19,24 +19,24 @@
           90x190, un salon avec un coin repas et une cuisine équipée.
         </p>
       </div>
-      
+
       <div :class="styles.box">
-      <div v-for="item in aItems" :class="styles.boxItem">
-        <div :class="styles.boxTitleContainer">
-          <Icon
-            :name="item.icon"
-            color="#F0EAD2"
-            :stroke-width="2"
-            :size="32"
-          />
-          <p :class="styles.boxTitle">
-            {{ item.title }}
+        <div v-for="item in aItems" :class="styles.boxItem">
+          <div :class="styles.boxTitleContainer">
+            <Icon
+              :name="item.icon"
+              color="#F0EAD2"
+              :stroke-width="2"
+              :size="32"
+            />
+            <p :class="styles.boxTitle">
+              {{ item.title }}
+            </p>
+          </div>
+          <p :class="styles.boxText">
+            {{ item.text }}
           </p>
         </div>
-        <p :class="styles.boxText">
-          {{ item.text }}
-        </p>
-      </div>
       </div>
     </div>
   </section>

@@ -6,6 +6,9 @@ const root = hstack({
   h: "full",
   alignItems: "stretch",
   justify: "stretch",
+  xlDown: {
+    flexDirection: "column",
+  },
 });
 
 const container = cva({
@@ -18,6 +21,13 @@ const container = cva({
     view: {
       selector: {
         w: "4/5",
+        xlDown: {
+          w: "full",
+          h: "4/5",
+        },
+        mdDown: {
+          h: "fit",
+        },
       },
     },
   },
@@ -45,10 +55,16 @@ const imageContainer = hstack({
   bg: "rgba(0, 0, 0, 0.5)",
   alignItems: "center",
   justify: "center",
+  mdDown: {
+    h: "fit",
+  },
 });
 
 const image = css({
   h: "full",
+  mdDown: {
+    h: "fit",
+  },
 });
 
 const imageSelectionContainer = vstack({
@@ -57,6 +73,16 @@ const imageSelectionContainer = vstack({
   overflowY: "scroll",
   gap: 2,
   p: 2,
+  xlDown: {
+    flexDirection: "row",
+    w: "full",
+    h: "1/5",
+    overflowX: "scroll",
+    overflowY: "hidden",
+  },
+  mdDown: {
+    h: "fit",
+  },
 });
 
 const imageSelection = css({
@@ -68,6 +94,13 @@ const imageSelection = css({
   _hover: {
     border: "2px solid lightgray",
     opacity: 0.5,
+  },
+  xlDown: {
+    w: "unset",
+    h: "full",
+  },
+  mdDown: {
+    maxH: "1150px",
   },
 });
 

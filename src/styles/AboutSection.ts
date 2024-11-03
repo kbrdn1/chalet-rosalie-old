@@ -5,10 +5,16 @@ const root = hstack({
   w: "full",
   gap: 0,
   py: 8,
+  xlDown: {
+    flexDirection: "column",
+  },
 });
 
 const carousel = css({
   w: "1/2",
+  xlDown: {
+    w: "full",
+  },
 });
 
 const container = vstack({
@@ -16,6 +22,9 @@ const container = vstack({
   gap: 4,
   alignItems: "center",
   justify: "center",
+  xlDown: {
+    w: "full",
+  },
 });
 
 const containerTitle = css({
@@ -40,6 +49,7 @@ const box = hstack({
   gap: 0,
   shadow: "2xl",
   justify: "space-evenly",
+  flexWrap: "wrap",
 });
 
 const boxItem = vstack({

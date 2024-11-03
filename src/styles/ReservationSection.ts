@@ -5,6 +5,10 @@ const root = vstack({
   bg: "olivine",
   w: "full",
   p: 10,
+  mdDown: {
+    p: 0,
+    py: 10,
+  },
 });
 
 const title = css({
@@ -17,6 +21,9 @@ const containerGroup = hstack({
   gap: 10,
   alignItems: "stretch",
   justify: "center",
+  mdDown: {
+    flexDir: "column",
+  },
 });
 
 const containerLeft = vstack({
@@ -50,6 +57,9 @@ const form = vstack({
 const inputGroup = hstack({
   gap: 4,
   w: "full",
+  mdDown: {
+    flexDir: "column",
+  },
 });
 
 const input = css({
@@ -63,6 +73,11 @@ const input = css({
   fontSize: "1rem",
 });
 
+const inputGroupDateRange = vstack({
+  w: "full",
+  justify: "left",
+});
+
 const textarea = css({
   w: "full",
   rounded: "sm",
@@ -72,6 +87,20 @@ const textarea = css({
   borderStyle: "solid",
   color: "chamoisee",
   fontSize: "1rem",
+});
+
+const buttonSubmit = hstack({
+  w: "full",
+  justify: "center",
+  py: 2,
+  px: 4,
+  bg: "olivine",
+  color: "white",
+  fontWeight: "bold",
+  _hover: {
+    bg: "teaGreen",
+  },
+  transition: "all 0.3s",
 });
 
 export {
@@ -84,5 +113,7 @@ export {
   form,
   inputGroup,
   input,
+  inputGroupDateRange,
   textarea,
+  buttonSubmit,
 };

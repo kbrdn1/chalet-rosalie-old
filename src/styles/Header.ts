@@ -5,8 +5,7 @@ const root = hstack({
   pt: "4rem",
   h: "screen",
   gap: 0,
-  alignItems: "start",
-  mdDown: {
+  xlDown: {
     flexDirection: "column",
   },
 });
@@ -16,9 +15,9 @@ const leftSide = vstack({
   w: "1/2",
   h: "full",
   justify: "start",
-  mdDown: {
+  xlDown: {
     w: "full",
-    h: "fit"
+    justifyContent: "center",
   },
 });
 
@@ -31,9 +30,8 @@ const rightSide = vstack({
   bgSize: "cover",
   bgPosition: "center",
   shadow: "2xl",
-  mdDown: {
-    w: "full",
-    h: "fit"
+  xlDown: {
+    display: "none",
   },
 });
 
@@ -48,6 +46,10 @@ const contentContainer = vstack({
   bgBlendMode: "soft-light",
   bgSize: "cover",
   shadow: "2xl",
+  xlDown: {
+    px: "1rem",
+    py: "1rem",
+  },
 });
 
 const title = css({
@@ -70,12 +72,23 @@ const box = hstack({
   right: "-210px",
   bottom: "calc(210px)",
   shadow: "2xl",
+  xlDown: {
+    bg: "#FFF",
+    pos: "relative",
+    right: "0",
+    bottom: "0",
+    justifyContent: "space-evenly",
+    flexWrap: "wrap",
+  },
 });
 
 const boxItem = vstack({
   p: 2,
   bg: "#FFF",
   minW: "210px",
+  xlDown: {
+    minW: "unset",
+  },
 });
 
 const boxButton = vstack({
@@ -94,6 +107,11 @@ const boxButton = vstack({
   minW: "210px",
   _hover: {
     bg: "teaGreen",
+  },
+  xlDown: {
+    minW: "unset",
+    h: "auto",
+    p: 4,
   },
 });
 
@@ -140,7 +158,7 @@ const incatorText = css({
 });
 
 const banner = css({
-  h: "full"
+  h: "full",
 });
 
 const styles = {

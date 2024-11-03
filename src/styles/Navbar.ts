@@ -6,6 +6,7 @@ const root = hstack({
   w: "full",
   h: "fit",
   bg: "white",
+  maxW: "1920px",
   justify: "between",
   zIndex: 10,
 });
@@ -15,6 +16,9 @@ const titleContainer = hstack({
   h: "4rem",
   justify: "center",
   alignItems: "center",
+  mdDown: {
+    w: "full",
+  },
 });
 
 const titleLink = hstack({
@@ -39,6 +43,10 @@ const listContainer = hstack({
   gap: 0,
   justify: "space-evenly",
   alignItems: "center",
+  mdDown: {
+    display: "none",
+    w: 0,
+  },
 });
 
 const listItem = hstack({

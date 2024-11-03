@@ -5,6 +5,9 @@ const root = hstack({
   gap: 0,
   bg: "#FFF",
   alignItems: "stretch",
+  mdDown: {
+    flexDirection: "column",
+  },
 });
 
 const footerLeft = vstack({
@@ -13,6 +16,9 @@ const footerLeft = vstack({
   gap: 4,
   alignItems: "center",
   justify: "center",
+  mdDown: {
+    w: "full",
+  },
 });
 
 const footerRight = vstack({
@@ -22,6 +28,9 @@ const footerRight = vstack({
   alignItems: "left",
   justify: "left",
   bg: "umber",
+  mdDown: {
+    w: "full",
+  },
 });
 
 const list = vstack({

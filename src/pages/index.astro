@@ -13,10 +13,10 @@ export const prerender = true;
 
 <Layout title="Chalet Rosalie">
   <Navbar />
-  <Header />
+  <Header :client:load/>
   <AboutSection />
   <InfoSection />
   <ReservationSection />
-  <PhotoSection />
+  <PhotoSection :client:load/>
   <Footer />
 </Layout>

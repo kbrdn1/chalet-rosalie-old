@@ -12,11 +12,18 @@ const root = vstack({
   justify: "center",
   p: 10,
   pos: "relative",
+  mdDown: {
+    p: 0,
+  },
 });
 
 const map = css({
   mb: "-2rem",
   zIndex: 1,
+  mdDown: {
+    mb: 0,
+    maxW: "full",
+  },
 });
 
 const container = hstack({
@@ -28,7 +35,7 @@ const container = hstack({
   p: 4,
   gap: 4,
   mt: 4,
-  mdDown: {
+  xlDown: {
     flexDirection: "column",
   },
 });
@@ -40,7 +47,7 @@ const containerItems = vstack({
   gap: 4,
   alignItems: "stretch",
   justify: "center",
-  mdDown: {
+  xlDown: {
     flexDirection: "row",
   },
 });

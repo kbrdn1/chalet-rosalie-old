@@ -1,5 +1,11 @@
 @layer reset, base, tokens, recipes, utilities;
 
+html {
+  max-width: 1920px;
+  overflow-x: hidden;
+  margin-inline: auto;
+}
+
 /* Initialize Onest font */
 @font-face {
   font-family: "Onest";

@@ -28,12 +28,20 @@
               {{ item.text }}
             </p>
           </div>
-          <a href="#reservation" :class="styles.content.boxButton">Réserver</a>
+          <button :class="styles.content.boxButton">
+            <a href="#reservation">Réserver</a>
+          </button>
         </div>
       </div>
       <div :class="styles.indicator.container">
         <div :class="styles.indicator.arrow.container">
-          <Icon name="Minus" color="#A98467" :stroke-width="2" :size="32" :class="styles.indicator.arrow.extension"/>
+          <Icon
+            name="Minus"
+            color="#A98467"
+            :stroke-width="2"
+            :size="32"
+            :class="styles.indicator.arrow.extension"
+          />
           <Icon name="ArrowDown" color="#ADC178" :stroke-width="2" :size="32" />
         </div>
         <p :class="styles.indicator.text">Glissez pour découvrir</p>

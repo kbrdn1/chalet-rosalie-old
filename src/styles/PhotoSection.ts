@@ -6,6 +6,10 @@ const root = vstack({
   p: 10,
   alignItems: "center",
   justify: "center",
+  mdDown: {
+    p: 0,
+    py: 10,
+  },
 });
 
 const title = css({
