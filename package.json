@@ -19,6 +19,7 @@
     "@astrojs/vue": "^4.1.0",
     "astro": "^2.10.14",
     "caniuse-lite": "^1.0.30001676",
+    "lucide-vue-next": "^0.454.0",
     "prettier": "^3.2.5",
     "web-vitals": "^3.3.1"
   },
