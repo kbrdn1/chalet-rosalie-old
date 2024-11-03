@@ -13,6 +13,7 @@ export default defineConfig({
   },
   adapter: vercel({
     imageService: true,
+    webAnalytics: { enabled: true }
   }),
   site: "https://chalet-rosalie.com",
   integrations: [vue(), mdx()],
