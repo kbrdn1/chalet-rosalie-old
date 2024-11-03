@@ -1,5 +1,5 @@
 import { defineConfig } from "astro/config";
-import vercel from '@astrojs/vercel/edge';
+import vercel from '@astrojs/vercel/serverless';
 import vue from "@astrojs/vue";
 import mdx from "@astrojs/mdx";
 
