@@ -45,6 +45,6 @@
 <script setup lang="ts">
 import * as styles from "@/styles/AboutSection";
 import Icon from "@/components/Icon.vue";
-import aItems from "@/constants/AboutItems";
+import aItems from "@/constants/aboutItems";
 import Carousel from "@/components/CarouselPhoto.vue";
 </script>
