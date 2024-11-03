@@ -14,7 +14,7 @@ export default defineConfig({
   adapter: vercel({
     imageService: true,
   }),
-  site: "https://chalet-rosalie.vercel.app",
+  site: "https://chalet-rosalie.com",
   integrations: [vue(), mdx()],
   i18n: {
     defaultLocale: "fr",
