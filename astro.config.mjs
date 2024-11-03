@@ -23,4 +23,9 @@ export default defineConfig({
       prefixDefaultLocale: false,
     },
   },
+  build: {
+    rollupOptions: {
+      external: ["lucide-vue-next"],
+    },
+  },
 });
