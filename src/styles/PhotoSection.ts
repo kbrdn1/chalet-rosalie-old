@@ -21,8 +21,11 @@ const title = css({
 const container = css({
   bg: "umber",
   w: "full",
-  h: "800px",
+  h: "fit",
   p: 4,
 });
 
-export { root, title, container };
+const carousel = hstack({
+});
+
+export { root, title, container, carousel };

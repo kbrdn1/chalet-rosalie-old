@@ -53,12 +53,9 @@ const contentContainer = vstack({
 });
 
 const title = css({
-  fontSize: "1.3rem",
+  fontSize: "4xl",
   fontWeight: "bold",
   color: "umber",
-  lgDown: {
-    fontSize: "1.1rem",
-  },
 });
 
 const text = css({
@@ -70,7 +67,7 @@ const box = hstack({
   gap: 0,
   pos: "absolute",
   right: "-210px",
-  bottom: "calc(210px)",
+  bottom: "170px",
   shadow: "2xl",
   xlDown: {
     bg: "#FFF",

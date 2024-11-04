@@ -12,7 +12,7 @@ const root = vstack({
 });
 
 const title = css({
-  fontSize: "5xl",
+  fontSize: "3xl",
   fontWeight: "bold",
   color: "white",
 });

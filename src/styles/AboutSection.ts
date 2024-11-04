@@ -11,6 +11,7 @@ const root = hstack({
 });
 
 const carousel = css({
+  bg: "umber",
   w: "1/2",
   xlDown: {
     w: "full",
@@ -29,7 +30,7 @@ const container = vstack({
 
 const containerTitle = css({
   color: "umber",
-  fontSize: "5xl",
+  fontSize: "3xl",
   fontWeight: "bold",
   alignSelf: "left",
 });

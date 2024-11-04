@@ -1,7 +1,7 @@
 <template>
   <section id="about" :class="styles.root">
     <div :class="styles.carousel">
-      <Carousel />
+      <Carousel :selector="false"/>
     </div>
     <div :class="styles.container">
       <h2 :class="styles.containerTitle">A propos</h2>

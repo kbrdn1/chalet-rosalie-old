@@ -12,15 +12,16 @@
       </button>
     </div>
     <div v-if="selector" :class="styles.imageSelectionContainer">
-      <img
-        v-for="img in photos"
-        :key="img"
-        :value="img"
-        :src="img"
-        :class="styles.imageSelection"
-        :aria-selected="selected === img"
-        @click="handleClickSelection"
-      />
+      <div v-for="img in photos" :class="styles.imageSelectionElement">
+        <img
+          :key="img"
+          :value="img"
+          :src="img"
+          :class="styles.imageSelection"
+          :aria-selected="selected === img"
+          @click="handleClickSelection"
+        />
+      </div>
     </div>
   </div>
 </template>

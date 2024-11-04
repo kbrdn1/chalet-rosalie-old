@@ -2,7 +2,9 @@
   <section id="photos" :class="styles.root">
     <h2 :class="styles.title">Photos</h2>
     <div :class="styles.container">
-      <Carousel selector />
+      <div :class="styles.carousel">
+        <Carousel selector />
+      </div>
     </div>
   </section>
 </template>

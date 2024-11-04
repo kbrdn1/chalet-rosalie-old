@@ -9,6 +9,7 @@ const root = hstack({
   xlDown: {
     flexDirection: "column",
   },
+    maxH: "350px",
 });
 
 const container = cva({
@@ -43,6 +44,7 @@ const button = hstack({
   color: "#fff",
   bg: "olivine",
   transition: "all 0.3s",
+  cursor: "pointer",
   opacity: 0.5,
   _hover: {
     opacity: 0.8,
@@ -55,53 +57,54 @@ const imageContainer = hstack({
   bg: "rgba(0, 0, 0, 0.5)",
   alignItems: "center",
   justify: "center",
-  mdDown: {
+  xlDown: {
     h: "fit",
   },
 });
 
 const image = css({
   h: "full",
-  mdDown: {
+  xlDown: {
     h: "fit",
+    maxH: "350px",
   },
 });
 
 const imageSelectionContainer = vstack({
   w: "1/5",
   h: "full",
-  overflowY: "scroll",
+  maxH: "350px",
+  overflowY: "auto",
+  alignItems: "center",
+  justify: "start",
   gap: 2,
-  p: 2,
   xlDown: {
-    flexDirection: "row",
     w: "full",
-    h: "1/5",
-    overflowX: "scroll",
-    overflowY: "hidden",
+    maxH: "150px",
   },
-  mdDown: {
-    h: "fit",
-  },
+});
+
+const imageSelectionElement = hstack({
+  w: "fit",
+  h: "350px",
 });
 
 const imageSelection = css({
   w: "full",
+  h: "full",
   transition: "all 0.3s",
   _selected: {
     border: "2px solid green",
   },
   _hover: {
     border: "2px solid lightgray",
-    opacity: 0.5,
-  },
-  xlDown: {
-    w: "unset",
-    h: "full",
+    opacity: 0.7,
   },
   mdDown: {
-    maxH: "1150px",
+    w: "full",
+    h: "fit",
   },
+  cursor: "pointer",
 });
 
 export {
@@ -111,5 +114,6 @@ export {
   imageContainer,
   image,
   imageSelectionContainer,
+  imageSelectionElement,
   imageSelection,
 };

@@ -28,7 +28,7 @@ const map = css({
 
 const container = hstack({
   bg: "#FFF",
-  maxW: "5xl",
+  maxW: "3xl",
   alignItems: "center",
   justify: "center",
   shadow: "2xl",
@@ -48,6 +48,7 @@ const containerItems = vstack({
   alignItems: "stretch",
   justify: "center",
   xlDown: {
+    w: "full",
     flexDirection: "row",
   },
 });
@@ -62,6 +63,9 @@ const item = vstack({
   fontWeight: "bold",
   textWrap: "nowrap",
   whiteSpace: "nowrap",
+  xlDown: {
+    w: "full",
+  },
 });
 
 export { root, map, container, containerText, containerItems, item };
