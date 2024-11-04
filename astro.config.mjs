@@ -16,7 +16,7 @@ export default defineConfig({
     webAnalytics: { enabled: true }
   }),
   site: "https://chalet-rosalie.com",
-  integrations: [vue(), mdx()],
+  integrations: [vue({ devtools: true }), mdx()],
   i18n: {
     defaultLocale: "fr",
     locales: ["fr", "en"],

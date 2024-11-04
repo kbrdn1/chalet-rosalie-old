@@ -13,10 +13,10 @@ export const prerender = true;
 
 <Layout title="Chalet Rosalie - Votre Refuge de Sérénité au Cœur des Vosges!">
   <Navbar />
-  <Header :client:load/>
-  <AboutSection />
+  <Header />
+  <AboutSection client:only />
   <InfoSection />
   <ReservationSection />
-  <PhotoSection :client:load/>
+  <PhotoSection client:only />
   <Footer />
 </Layout>
