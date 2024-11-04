@@ -33,6 +33,7 @@
               id="nom"
               name="nom"
               placeholder="Nom"
+              required
             />
             <input
               :class="styles.input"
@@ -40,6 +41,7 @@
               id="prenom"
               name="prenom"
               placeholder="Prénom"
+              required
             />
           </div>
           <input
@@ -48,6 +50,7 @@
             id="email"
             name="email"
             placeholder="Email"
+            required
           />
           <input
             :class="styles.input"
@@ -56,6 +59,7 @@
             name="telephone"
             placeholder="Téléphone"
             maxlength="10"
+            required
           />
           <div :class="styles.inputGroup">
             <div :class="styles.inputGroupDateRange">
@@ -76,6 +80,7 @@
                 id="dateDeparture"
                 name="dateDeparture"
                 placeholder="Date de départ"
+                required
               />
             </div>
           </div>
@@ -84,6 +89,8 @@
             id="message"
             name="message"
             placeholder="Message"
+            minlength="5"
+            required
           ></textarea>
           <button :class="styles.buttonSubmit" type="submit">Envoyer</button>
         </form>
