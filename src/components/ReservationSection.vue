@@ -33,6 +33,7 @@
               id="nom"
               name="nom"
               placeholder="Nom"
+              minlength="3"
               required
             />
             <input
@@ -41,6 +42,7 @@
               id="prenom"
               name="prenom"
               placeholder="Prénom"
+              minlength="3"
               required
             />
           </div>
@@ -58,7 +60,8 @@
             id="telephone"
             name="telephone"
             placeholder="Téléphone"
-            maxlength="10"
+            minlength="10"
+            maxlength="12"
             required
           />
           <div :class="styles.inputGroup">
