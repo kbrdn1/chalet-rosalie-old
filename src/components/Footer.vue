@@ -5,7 +5,7 @@
       <img src="/logo.svg" alt="Logo" :class="stylesNavbar.title.logo" />
       <p :class="stylesNavbar.title.text">Chalet Rosalie</p>
       </a>
-      <a :class="stylesReservation.link" href="mailto:contact@chalet-rosalie.fr">
+      <a :class="stylesReservation.link" href="mailto:mickael.collot754@sfr.fr">
         <Icon name="MailCheck" :stroke-width="2" :size="24" />
         contact@chalet-rosalie.fr
       </a>
